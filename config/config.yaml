@@ -127,23 +127,27 @@ rss:
   # - 正整数：覆盖全局设置，只推送此天数内的文章
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
-    - id: "hacker-news"
-      name: "Hacker News"
-      url: "https://hnrss.org/frontpage"
+    - id: "gn-top"
+      name: "谷歌新闻·全球热点"
+      url: "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en"
 
-    - id: "ruanyifeng"
-      name: "阮一峰的网络日志"
-      url: "http://www.ruanyifeng.com/blog/atom.xml"
-      enabled: false                  # 禁用
-      # max_age_days: 3               # 示例：推送 3 天内的文章（更新较慢的博客）
-     
+    - id: "reddit-worldnews"
+      name: "Reddit·世界新闻热榜"
+      url: "https://www.reddit.com/r/worldnews/top.rss?t=day"
+
     - id: "yahoo-finance"
       name: "雅虎财经"
       url: "https://finance.yahoo.com/news/rssindex"
 
-    - id: "gn-datacenter"
-      name: "谷歌新闻·数据中心争议"
-      url: "https://news.google.com/rss/search?q=%22data+center%22+noise&hl=en-US&gl=US&ceid=US:en"
+    - id: "hacker-news"
+      name: "Hacker News"
+      url: "https://hnrss.org/frontpage"
+      enabled: false
+
+    - id: "ruanyifeng"
+      name: "阮一峰的网络日志"
+      url: "http://www.ruanyifeng.com/blog/atom.xml"
+      enabled: false
       
     # 自定义源示例
     # - id: "custom-feed"
@@ -249,9 +253,9 @@ display:
   # 独立展示区：将指定平台/RSS 完整展示，不受关键词过滤
   # 推送展示由 regions.standalone 控制，AI 分析由 ai_analysis.include_standalone 控制
   standalone:
-    platforms: ["weibo", "zhihu", "toutiao", "baidu"]
-    rss_feeds: ["hacker-news"]
-    max_items: 15                               # 每个源最多展示条数（0=不限制）
+    platforms: ["weibo", "zhihu", "toutiao"]
+    rss_feeds: ["gn-top"]
+    max_items: 10                               # 每个源最多展示条数（0=不限制）
 
 
 # ===============================================================
