@@ -1,28 +1,27 @@
+# TrendRadar 频率词配置（国内外融合版）
+# 说明：英文同义词已并入各中文词组；词组之间以空行分隔
+
 [GLOBAL_FILTER]
 震惊
 
 [WORD_GROUPS]
 
 [突发事件]
-/爆炸|坠毁|解体|起火|火灾|泄漏|泄露|坍塌|垮塌|沉没|失联|失事|事故|突发|紧急撤离|停飞|召回/
+/爆炸|坠毁|解体|起火|火灾|泄漏|泄露|坍塌|垮塌|沉没|失联|失事|事故|突发|紧急撤离|停飞|explosion|crash|\bfires?\b|wildfire|blaze|collapse|sinking|missing|deadly|disaster|evacuat|grounding|grounded|derail|collision/
 @15
 
 [回应与危机]
-/道歉|致歉|回应|辟谣|声明|停售|下架|停运|宕机|崩了|服务中断|裁员|欠薪/
+/道歉|致歉|回应|辟谣|声明|停售|下架|停运|宕机|崩了|服务中断|裁员|欠薪|召回|apolog|recall|outage|shut.?downs?|lay.?offs?|breach|leak|suspen/
 @15
 
 [争议与民怨]
-/争议|质疑|热议|吵翻|众怒|抵制|吐槽|翻车|塌房|维权|投诉|举报|抗议|示威|罢工|诉讼|起诉|被罚|罚款|立案|调查|约谈/
+/争议|质疑|热议|吵翻|众怒|抵制|吐槽|翻车|塌房|维权|投诉|举报|抗议|示威|罢工|诉讼|起诉|被罚|罚款|立案|调查|约谈|controvers|protest|strik|boycott|lawsuit|\bsue(s|d)?\b|suing|investigat|probe|outrage|backlash|petition/
 @20
 
 [扰民与民生]
-/噪声|噪音|扰民|污染|辐射|征地|拆迁|停水|停电|涨价/
+/噪声|噪音|扰民|污染|辐射|征地|拆迁|停水|停电|涨价|noise|pollution|radiation|eviction|blackout|price.hike|\brent\b|tuition/
 @10
 
 [基础设施观察]
-/数据中心|算力|机房|变电站|风电|核电站|化工厂/
+/数据中心|算力|机房|变电站|风电|核电站|化工厂|data.?center|power.?plant|substation|wind.?farm|nuclear|chemical.?plant/
 @10
-
-[海外舆情信号]
-/\bexplosion|\bcrash|\boutage|\brecall|\bapology|\bbacklash|\boutrage|\bcontroversy|\bprotest|\blawsuit|\bsued|\bprobe|\bnoise\b|\bdata center/
-@15
